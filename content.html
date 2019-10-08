@@ -1,0 +1,99 @@
+<h3> Step 1 </h3>
+<div id = "step1">
+    <label for = "designyourself">Design Yourself</label>
+    <input type = "radio" id = "designyourself" name = "design_method" value = "dy">
+    <label for = "graphicelements">Graphic Elements Designer</label>
+    <input type = "radio" id = "graphicelements" name = "design_method" value = "ge">
+</div>
+<div id = "step2-designyourself" class = "hidden">
+    <h3>Step 2</h3>
+    <h4>Number of colors:</h4>
+    <div class = orderfield>
+        <label for = "colors-front">How many colors on the front?</label>
+        <select name = "colors_front" id = "colors-front" class = "influences-price">
+            <option value="0" selected = "selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+
+    <div class = orderfield>
+        <label for = "colors-back">How many colors on the back?</label>
+        <select name = "colors_back" id = "colors-back" class = "influences-price">
+            <option value="0" selected = "selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+
+        </select>
+    </div>
+    <h4>Quantity</h4>
+
+    <div class = orderfield>
+        <label for = "xs-quantity">XS:</label>
+        <input type = "text" name = "xs_quantity" id = "xs-quantity" class = "influences-price bulk-quantity" value = "0">
+    </div>
+
+    <div class = orderfield>
+        <label for = "s-quantity">S:</label>
+        <input type = "text" name = "s_quantity" id = "s-quantity" class = "influences-price bulk-quantity" value = "0">
+    </div>
+
+    <div class = orderfield>
+        <label for = "m-quantity">M:</label>
+        <input type = "text" name = "m_quantity" id = "m-quantity" class = "influences-price bulk-quantity" value = "0">
+    </div>
+
+    <div class = orderfield>
+        <label for = "l-quantity">L:</label>
+        <input type = "text" name = "l_quantity" id = "l-quantity" class = "influences-price bulk-quantity" value = "0">
+    </div>
+
+    <div class = orderfield>
+        <label for = "xl-quantity">XL:</label>
+        <input type = "text" name = "xl_quantity" id = "xl-quantity" class = "influences-price bulk-quantity" value = "0">
+    </div>
+
+</div>
+<div id = "step2-graphicelements" class = "hidden">
+    <h3>Step 2</h3>
+    <div id = "ge-description">
+        <h4>Description:</h4>
+        <textarea name = "ge_description" rows = "10" cols = "60"  placeholder="Describe your ideal design here. Try to be concise. You can use the design tool to better communicate your design"></textarea>
+    </div>
+    <div id = "ge-est-quantity">
+        <h4>Estimated Quantity</h4>
+        <label for = "est-quantity">What is the estimated quantity for your order?</label>
+        <select name = "est_quantity" id = "est-quantity">
+
+            <option value="24-47" selected = "selected">24-47</option>
+            <option value="48-71">48-71</option>
+            <option value="72-143">72-143</option>
+            <option value="144+">144+</option>
+
+
+    </select>
+    </div>
+</div>
+
+<div id = "price-summary" class = "hidden">
+    <div class = price-field>
+        <p>Base Price: $<span id = "base-price"></span></p>
+    </div>
+    <div class = price-field>
+        <p>+ Color Price: $<span id = "color-price"></span></p>
+    </div>
+    <div class = price-field>
+        <p>x Quantity: <span id = "quantity-price"></span></p>
+    </div>
+    <div class = price-field>
+        <p>- Bulk Discount: $<span id = "bulk-discount"></span></p>
+    </div>
+    <div class = price-field>
+        <hr>
+        <p>= Total Price: $<span id = "total-price"></span></p>
+    </div>
+</div>

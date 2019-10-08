@@ -1,0 +1,12 @@
+.hidden {
+    display:none;
+}
+
+#price-summary {
+    margin-top: 20px;
+}
+
+.price-field p {
+    margin-bottom: 5px;
+}
+
